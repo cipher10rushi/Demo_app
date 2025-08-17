@@ -9,6 +9,18 @@
     <div class="container">
         <h1>🎬 Threat Level Midnight</h1>
         <p>Its Brittney, Bitch! 💥</p>
+
+        <!-- Add image -->
+        <img src="{{ url_for('static', filename='images/prison mike.jpg') }}" 
+             alt="Michael Scott" width="400" style="border-radius:10px; margin:20px 0;">
+
+        <!-- Add video -->
+        <video width="400" controls>
+            <source src="{{ url_for('static', filename='videos/video_2025-08-18_00-01-41.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <br><br>
         <button onclick="alert('Stay classy! 🚀')">Click Me</button>
     </div>
 </body>
